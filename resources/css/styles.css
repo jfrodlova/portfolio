@@ -1,7 +1,107 @@
 body {
-    margin: 0;
+    margin: 0 10%;
     box-sizing: border-box;
     font-size: 16px;
     background-color: #0a0a0a;
-    color: whitesmoke
+    color: whitesmoke;
+    font-family: "Source Code Pro";
 }
+
+h2 {
+    font-family: Montserrat;
+    padding-top: 5%;
+}
+
+p {
+    font-family: "Source Code Pro";
+}
+
+/*
+.flex-container {
+display: flex;
+} 
+*/
+
+
+    
+
+
+
+/* Navigation */
+.nav {
+    margin: 0;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.navbar-brand {
+    font-family: "MontSerrat";
+}
+
+/* About */
+.subtitle {
+    font-size: 1.5rem;
+}
+
+span {
+    color: yellow;
+    font-weight: 600;
+}
+
+.profile-pic {
+    width: 300px;
+    border-radius: 40%;
+    margin: 3%
+}
+
+
+#about a {
+    cursor: pointer;
+    font-weight: 500;
+    color: #47eb30;
+}
+
+#about a:hover {
+        text-decoration: none;
+        color: antiquewhite;
+    }
+    
+
+
+
+
+/* Unordered lists (ul) */
+
+.no-bullets{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+
+
+  /* Projects */
+  .square {
+    height: 220px;
+    width: 250px;
+    background-color: #e2dada;
+    margin: 5%;
+    color: black;
+    text-align: center;
+    padding: 5%;    
+}
+
+#projects h3 {
+    color: black;
+    font-weight: 800;
+}
+
+
+/* Skills */
+
+/* Contact */
+
+/* Footer */
+
+
