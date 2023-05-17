@@ -1,30 +1,51 @@
 body {
-    margin: 0 10%;
     box-sizing: border-box;
-    font-size: 16px;
-    background-color: #0a0a0a;
+    margin: 0 10%;
+    
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
     color: whitesmoke;
     font-family: "Source Code Pro";
+    font-size: 16px;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: Montserrat;
 }
 
 h2 {
-    font-family: Montserrat;
-    padding-top: 5%;
+   padding: 10% 0 5%;
+}
+
+h3 {
+    font-size: 1.25rem;
 }
 
 p {
     font-family: "Source Code Pro";
 }
 
-/*
+a:hover { 
+    text-decoration: none;
+    color:white;
+}
+
+h3, a {
+    color: turquoise
+}
+
+
+
 .flex-container {
 display: flex;
+flex-wrap: wrap;
+justify-content: center;
 } 
-*/
 
-
+.inline {
+    display: inline;
     
-
+}
 
 
 /* Navigation */
@@ -34,6 +55,11 @@ display: flex;
 
 .nav-item {
     padding: 0 15px;
+}
+
+.nav-item:hover {
+    background-color: rgb(82, 95, 95);
+    border-radius: 5%;
 }
 
 .navbar-brand {
@@ -46,7 +72,7 @@ display: flex;
 }
 
 span {
-    color: yellow;
+    color: turquoise;
     font-weight: 600;
 }
 
@@ -57,51 +83,51 @@ span {
 }
 
 
-#about a {
-    cursor: pointer;
-    font-weight: 500;
-    color: #47eb30;
+    
+  /* Projects */
+  .card:hover {
+    background-color: rgb(58, 57, 57);
+    text-decoration: none;
 }
 
-#about a:hover {
-        text-decoration: none;
-        color: antiquewhite;
-    }
-    
-
-
-
-
-/* Unordered lists (ul) */
-
-.no-bullets{
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-  }
-
-
-  /* Projects */
-  .square {
-    height: 220px;
+  .card {
+    height: auto;
     width: 250px;
     background-color: #e2dada;
-    margin: 5%;
-    color: black;
+    margin: 2%;
+    background-color: rgb(82, 95, 95);
     text-align: center;
-    padding: 5%;    
+    flex-basis:auto;
+    padding: 0.5rem;
 }
 
-#projects h3 {
-    color: black;
-    font-weight: 800;
+.card h3 {
+    font-family: Montserrat;
 }
 
 
 /* Skills */
+.skill-card {
+    height: 150px;
+    width: 150px;
+    background-color: rgb(82, 95, 95);
+    padding: 1rem;
+    margin: 2%;
+    border-radius: 5%;
+    
+}
 
 /* Contact */
 
+.btn:hover {
+    background-color: rgb(82, 95, 95);
+    border: none;
+}
+
 /* Footer */
+footer {
+    padding: 5%;
+    text-align: center;
+}
 
 
