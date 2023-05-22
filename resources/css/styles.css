@@ -1,7 +1,7 @@
 body {
     box-sizing: border-box;
     margin: 0 10%;
-    
+
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
     color: whitesmoke;
     font-family: "Source Code Pro";
@@ -9,42 +9,49 @@ body {
     text-align: center;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: Montserrat;
 }
 
 h2 {
-   padding: 10% 0 5%;
+    padding: 10% 0 5%;
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 p {
     font-family: "Source Code Pro";
 }
 
-a:hover { 
+a:hover {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-h3, a {
+a {
     color: turquoise
 }
 
 
 
+
 .flex-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-} 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .inline {
-    display: inline;
-    
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+.inline a {
+    padding: 5%;
 }
 
 
@@ -78,27 +85,33 @@ span {
 
 .profile-pic {
     width: 300px;
-    border-radius: 40%;
-    margin: 3%
+    border-radius: 100%;
+    margin: 3%;
 }
 
 
-    
-  /* Projects */
-  .card:hover {
+
+/* Projects */
+
+.card {
+    margin: 2%;
+    text-align: center;
+    flex-basis: auto;
+    padding: 0.5rem;
+
+}
+
+.project-card:hover {
     background-color: rgb(58, 57, 57);
     text-decoration: none;
 }
 
-  .card {
+
+.project-card {
     height: auto;
     width: 250px;
-    background-color: #e2dada;
-    margin: 2%;
-    background-color: rgb(82, 95, 95);
-    text-align: center;
-    flex-basis:auto;
-    padding: 0.5rem;
+    color: white;
+    background-color: #4e4646;
 }
 
 .card h3 {
@@ -108,26 +121,37 @@ span {
 
 /* Skills */
 .skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     height: 150px;
     width: 150px;
-    background-color: rgb(82, 95, 95);
+    color: black;
+    background-color: rgb(229, 243, 243);
+
     padding: 1rem;
     margin: 2%;
-    border-radius: 5%;
-    
+    border-radius: 100%;
 }
 
 /* Contact */
 
 .btn:hover {
-    background-color: rgb(82, 95, 95);
+    background-color: turquoise;
     border: none;
+}
+
+.btn {
+    margin: 2%;
+    padding: 5px 20px;
+    border-radius: 5%;
+    width: 80px;
 }
 
 /* Footer */
 footer {
+    padding: 5% 8%;
     padding: 5%;
     text-align: center;
 }
-
-
