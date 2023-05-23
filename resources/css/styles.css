@@ -37,23 +37,11 @@ a {
 
 
 
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.inline {
-    display: inline-flex;
-    justify-content: center;
-
-}
-
-.inline a {
-    padding: 5%;
-}
-
 
 /* Navigation */
 .nav {
@@ -84,9 +72,10 @@ span {
 }
 
 .profile-pic {
-    width: 300px;
+    max-width: 300px;
     border-radius: 100%;
     margin: 3%;
+    align-items: center;
 }
 
 
@@ -94,30 +83,65 @@ span {
 /* Projects */
 
 .card {
-    margin: 2%;
+    margin: 3%;
     text-align: center;
     flex-basis: auto;
     padding: 0.5rem;
 
 }
 
-.project-card:hover {
-    background-color: rgb(58, 57, 57);
-    text-decoration: none;
-}
 
+.project-card:hover {
+    background-image: none;
+    
+} 
 
 .project-card {
-    height: auto;
+    height: 280px;
     width: 250px;
     color: white;
-    background-color: #4e4646;
+    background-color: rgb(78,70,70);
+    display: flex;
+    justify-content: space-around;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+
+ .card-container {
+    display: none;
+} 
+
+.project-card:hover .card-container {
+    display: block;
 }
 
-.card h3 {
-    font-family: Montserrat;
+
+.drums {
+    background-image: url(../images/drumKit.jpg);
 }
 
+.fotomatic {
+    background-image: url(../images/camera.jpg);
+}
+
+.yoga {
+    background-image: url(../images/yoga.jpg);
+    
+}
+
+.project-links {
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+.project-links a {
+    padding: 10px;
+}
+ 
 
 /* Skills */
 .skill-card {
@@ -131,7 +155,7 @@ span {
     background-color: rgb(229, 243, 243);
 
     padding: 1rem;
-    margin: 2%;
+    margin: 3%;
     border-radius: 100%;
 }
 
@@ -140,13 +164,17 @@ span {
 .btn:hover {
     background-color: turquoise;
     border: none;
+    opacity: 1;
+    transition-timing-function: ease-in;
+    transition: 0.3s;
 }
 
 .btn {
-    margin: 2%;
+    margin: 4%;
     padding: 5px 20px;
     border-radius: 5%;
     width: 80px;
+    opacity: 0.8;
 }
 
 /* Footer */
@@ -155,3 +183,12 @@ footer {
     padding: 5%;
     text-align: center;
 }
+
+/* Media query */
+@media only screen and (max-width: 375px) {
+    .profile-pic {
+        max-width: 250px;
+    }
+  
+}
+
