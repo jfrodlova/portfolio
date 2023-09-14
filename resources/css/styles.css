@@ -132,6 +132,11 @@ span {
     
 }
 
+.sbudkou {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),url(../images/sbudkou.jpg);
+}
+
 .project-links {
     display: inline-flex;
     justify-content: center;
