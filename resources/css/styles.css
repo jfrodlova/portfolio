@@ -118,6 +118,9 @@ span {
     display: block;
 }
 
+.graubuenden {
+    background-image: url(../images/sarthak-maji-dOA35bihSjk-unsplash.jpg);
+}
 
 .drums {
     background-image: url(../images/drumKit.jpg);
