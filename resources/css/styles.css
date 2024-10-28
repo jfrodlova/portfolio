@@ -35,8 +35,6 @@ a {
     color: turquoise
 }
 
-
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -116,6 +114,11 @@ span {
 
 .project-card:hover .card-container {
     display: block;
+}
+
+.nomad {
+    background-image: url(../images/nano.jpg);
+    
 }
 
 .graubuenden {
